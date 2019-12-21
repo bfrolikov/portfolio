@@ -1,26 +1,32 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Header, Card, Image, Grid, Segment } from 'semantic-ui-react';
+//import './App.css';
+import ava from './images/ava.jpg';
 
-function App() {
+const App = () => {
+  const rectangleStyle = {
+    //width: '100%',
+    background: 'rgba(122, 122, 122,0.1)'
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Segment vertical inverted>
+        <Grid divided>
+          <Grid.Column width={3}>
+            <Card>
+              <Image src={ava} size="large"/>
+            </Card>
+          </Grid.Column>
+          <Grid.Column width={4}>
+            <Header inverted>
+              Hi! My name is Boris Frolikov
+            </Header>
+            <p></p>
+          </Grid.Column>
+        </Grid>
+    </Segment>
     </div>
   );
-}
+};
 
 export default App;
