@@ -4,13 +4,13 @@ import ava from '../images/ava.jpg';
 
 const FaceSegment = ()=>(
   <Segment vertical inverted style={{ padding: '120px 0 120px 90px', height: 600 }}>
-  <Grid divided style={{ maxWidth: 1200 }}>
-    <Grid.Column width={5}>
+  <Grid stackable columns='equal' style={{maxWidth:800}}>
+    <Grid.Column width={8}>
       <Card style={{ minWidth: 340 }}>
         <Image src={ava} />
       </Card>
     </Grid.Column>
-    <Grid.Column width={5} style={{ marginTop: 35 }}>
+    <Grid.Column width={8} style={{ marginTop: 35 }}>
       <Header inverted as="h2">
         Hi! My name is Boris Frolikov
       </Header>

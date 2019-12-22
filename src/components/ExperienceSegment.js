@@ -8,12 +8,12 @@ import mongo from '../images/mongo.jpg'
 import semantic from '../images/semantic.png'
 import firebase from '../images/firebase.jpg'
 const ExperienceSegment = () => (
-  <Segment vertical style={{ paddingLeft: 120, paddingTop: 30, background: 'rgba(122,122,122,0.1)', height: 900 }}>
-    <Grid relaxed >
+  <Segment vertical style={{ paddingLeft: '3%', paddingTop: 30, background: 'rgba(122,122,122,0.1)', height: 900 }}>
+    <Grid relaxed stackable>
       <Grid.Row columns={4}>
-        <Grid.Column>
+        <Grid.Column >
           <Card >
-            <Image src={cpp} style={{ height: 290, width: 270, margin: 'auto' }} />
+            <Image src={cpp} />
             <Card.Content>
               <Card.Header>C++</Card.Header>
               <Card.Description>
@@ -22,9 +22,9 @@ const ExperienceSegment = () => (
             </Card.Content>
           </Card>
         </Grid.Column>
-        <Grid.Column>
-          <Card>
-            <Image src={as} style={{ height: 290, width: 290, margin: 'auto' }} />
+        <Grid.Column >
+          <Card >
+            <Image src={as} />
             <Card.Content>
               <Card.Header>Android Studio</Card.Header>
               <Card.Description>
@@ -33,8 +33,8 @@ const ExperienceSegment = () => (
             </Card.Content>
           </Card>
         </Grid.Column>
-        <Grid.Column>
-          <Card>
+        <Grid.Column >
+          <Card >
             <Image src={firebase} />
             <Card.Content>
               <Card.Header>Google Firebase</Card.Header>
@@ -46,7 +46,7 @@ const ExperienceSegment = () => (
         </Grid.Column>
       </Grid.Row >
       <Grid.Row columns={4}>
-        <Grid.Column>
+        <Grid.Column >
           <Card >
             <Image src={mongo} />
             <Card.Content>
@@ -56,10 +56,10 @@ const ExperienceSegment = () => (
               </Card.Description>
             </Card.Content>
           </Card>
-        </Grid.Column>
-        <Grid.Column>
-          <Card>
-            <Image src={node} style={{ height: 290, width: 290, margin: 'auto' }} />
+        </Grid.Column >
+        <Grid.Column >
+          <Card >
+            <Image src={node} />
             <Card.Content>
               <Card.Header>Node.js</Card.Header>
               <Card.Description>
@@ -68,9 +68,9 @@ const ExperienceSegment = () => (
             </Card.Content>
           </Card>
         </Grid.Column>
-        <Grid.Column>
-          <Card>
-            <Image src={reactImage} />
+        <Grid.Column >
+          <Card >
+            <Image src={reactImage}  />
             <Card.Content>
               <Card.Header>React</Card.Header>
               <Card.Description>
@@ -78,10 +78,10 @@ const ExperienceSegment = () => (
               </Card.Description>
             </Card.Content>
           </Card>
-        </Grid.Column>
+        </Grid.Column >
         <Grid.Column>
-          <Card>
-            <Image src={semantic} style={{ height: 290, width: 290, margin: 'auto' }} />
+          <Card >
+            <Image src={semantic}  />
             <Card.Content>
               <Card.Header>Semantic UI React</Card.Header>
               <Card.Description>
