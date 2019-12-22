@@ -1,5 +1,6 @@
 import React from 'react';
 import { Grid, Segment, Card, Image, Divider, Container } from 'semantic-ui-react';
+import ExperienceCard from './ExperienceCard'
 import cpp from '../images/cpp.jpg'
 import as from '../images/as.jpg'
 import reactImage from '../images/react.jpg'
@@ -21,84 +22,42 @@ const ExperienceSegment = ({ mobile }) => {
         <Grid relaxed stackable>
           <Grid.Row columns={4}>
             <Grid.Column >
-              <Card style={{marginLeft:'auto',marginRight:'auto'}} >
-                <Image src={mongo} />
-                <Card.Content>
-                  <Card.Header>MongoDB</Card.Header>
-                  <Card.Description>
-                    Experience: less than a year
-              </Card.Description>
-                </Card.Content>
-              </Card>
+              <ExperienceCard name="MongoDB"
+                desc="Experience: less than a year"
+                src={mongo} />
             </Grid.Column >
             <Grid.Column >
-              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
-                <Image src={node} />
-                <Card.Content>
-                  <Card.Header>Node.js</Card.Header>
-                  <Card.Description>
-                    Experience: less than a year
-              </Card.Description>
-                </Card.Content>
-              </Card>
+              <ExperienceCard name="Node.js"
+                desc="Experience: less than a year"
+                src={node} />
             </Grid.Column>
             <Grid.Column >
-              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
-                <Image src={reactImage} />
-                <Card.Content>
-                  <Card.Header>React</Card.Header>
-                  <Card.Description>
-                    Experience: less than a year
-              </Card.Description>
-                </Card.Content>
-              </Card>
+              <ExperienceCard name="React"
+                desc="Experience: less than a year"
+                src={reactImage} />
             </Grid.Column >
             <Grid.Column>
-              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
-                <Image src={semantic} />
-                <Card.Content>
-                  <Card.Header>Semantic UI React</Card.Header>
-                  <Card.Description>
-                    Experience: less than a year
-              </Card.Description>
-                </Card.Content>
-              </Card>
+              <ExperienceCard name="Semantic UI React"
+                desc="Experience: less than a year"
+                src={semantic} />
             </Grid.Column>
 
           </Grid.Row>
           <Grid.Row columns={4}>
             <Grid.Column >
-              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
-                <Image src={cpp} />
-                <Card.Content>
-                  <Card.Header>C++</Card.Header>
-                  <Card.Description>
-                    Experience: 5 years
-              </Card.Description>
-                </Card.Content>
-              </Card>
+              <ExperienceCard name="C++"
+                desc="Experience: 5 years"
+                src={cpp} />
             </Grid.Column>
             <Grid.Column >
-              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
-                <Image src={as} />
-                <Card.Content>
-                  <Card.Header>Android Studio</Card.Header>
-                  <Card.Description>
-                    Experience: 2 years
-              </Card.Description>
-                </Card.Content>
-              </Card>
+              <ExperienceCard name="Android Studio"
+                desc="Experience: 2 years"
+                src={as} />
             </Grid.Column>
             <Grid.Column >
-              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
-                <Image src={firebase} />
-                <Card.Content>
-                  <Card.Header>Google Firebase</Card.Header>
-                  <Card.Description>
-                    Experience: 2 years
-              </Card.Description>
-                </Card.Content>
-              </Card>
+            <ExperienceCard name="Google Firebase"
+                desc="Experience: 2 years"
+                src={firebase} />
             </Grid.Column>
           </Grid.Row >
         </Grid>
