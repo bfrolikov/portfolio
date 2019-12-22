@@ -1,5 +1,6 @@
 import React from 'react';
-import { Grid, Segment, Card, Image, List, Divider } from 'semantic-ui-react';
+import { Grid, Segment, Card, Image, Header } from 'semantic-ui-react';
+import StyledDivider from './StyledDivider';
 import cpp from '../images/cpp.jpg'
 import as from '../images/as.jpg'
 import reactImage from '../images/react.jpg'
@@ -8,7 +9,8 @@ import mongo from '../images/mongo.jpg'
 import semantic from '../images/semantic.png'
 import firebase from '../images/firebase.jpg'
 const ExperienceSegment = () => (
-  <Segment vertical style={{ paddingLeft: '3%', paddingTop: 30, background: 'rgba(122,122,122,0.1)', height: 900 }}>
+  <Segment vertical style={{ paddingLeft: '3%', paddingTop: 30, background: 'rgba(122,122,122,0.1)', height: 1100 }}>
+    <StyledDivider text="Technologies that I use"/>
     <Grid relaxed stackable>
       <Grid.Row columns={4}>
         <Grid.Column >
@@ -70,7 +72,7 @@ const ExperienceSegment = () => (
         </Grid.Column>
         <Grid.Column >
           <Card >
-            <Image src={reactImage}  />
+            <Image src={reactImage} />
             <Card.Content>
               <Card.Header>React</Card.Header>
               <Card.Description>
@@ -81,7 +83,7 @@ const ExperienceSegment = () => (
         </Grid.Column >
         <Grid.Column>
           <Card >
-            <Image src={semantic}  />
+            <Image src={semantic} />
             <Card.Content>
               <Card.Header>Semantic UI React</Card.Header>
               <Card.Description>
