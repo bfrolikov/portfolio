@@ -10,100 +10,99 @@ import firebase from '../images/firebase.jpg'
 const ExperienceSegment = ({ mobile }) => {
   const dividerStyle = {
     fontSize: mobile ? '1.7em' : '3em',
-    marginBottom: 60,
-    marginLeft: '-3%'
+    marginBottom: 60
   }
   return (
     <Segment vertical style={{ paddingTop: 30, background: 'rgba(122,122,122,0.1)' }}>
       <Divider horizontal style={dividerStyle}>
         Technologies that I use
     </Divider>
-    <Container>
-      <Grid relaxed stackable>
-        <Grid.Row columns={4}>
-          <Grid.Column >
-            <Card >
-              <Image src={cpp} />
-              <Card.Content>
-                <Card.Header>C++</Card.Header>
-                <Card.Description>
-                  Experience: 5 years
+      <Container >
+        <Grid relaxed stackable>
+          <Grid.Row columns={4}>
+            <Grid.Column >
+              <Card style={{marginLeft:'auto',marginRight:'auto'}} >
+                <Image src={mongo} />
+                <Card.Content>
+                  <Card.Header>MongoDB</Card.Header>
+                  <Card.Description>
+                    Experience: less than a year
               </Card.Description>
-              </Card.Content>
-            </Card>
-          </Grid.Column>
-          <Grid.Column >
-            <Card >
-              <Image src={as} />
-              <Card.Content>
-                <Card.Header>Android Studio</Card.Header>
-                <Card.Description>
-                  Experience: 2 years
+                </Card.Content>
+              </Card>
+            </Grid.Column >
+            <Grid.Column >
+              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
+                <Image src={node} />
+                <Card.Content>
+                  <Card.Header>Node.js</Card.Header>
+                  <Card.Description>
+                    Experience: less than a year
               </Card.Description>
-              </Card.Content>
-            </Card>
-          </Grid.Column>
-          <Grid.Column >
-            <Card >
-              <Image src={firebase} />
-              <Card.Content>
-                <Card.Header>Google Firebase</Card.Header>
-                <Card.Description>
-                  Experience: 2 years
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column >
+              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
+                <Image src={reactImage} />
+                <Card.Content>
+                  <Card.Header>React</Card.Header>
+                  <Card.Description>
+                    Experience: less than a year
               </Card.Description>
-              </Card.Content>
-            </Card>
-          </Grid.Column>
-        </Grid.Row >
-        <Grid.Row columns={4}>
-          <Grid.Column >
-            <Card >
-              <Image src={mongo} />
-              <Card.Content>
-                <Card.Header>MongoDB</Card.Header>
-                <Card.Description>
-                  Experience: less than a year
+                </Card.Content>
+              </Card>
+            </Grid.Column >
+            <Grid.Column>
+              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
+                <Image src={semantic} />
+                <Card.Content>
+                  <Card.Header>Semantic UI React</Card.Header>
+                  <Card.Description>
+                    Experience: less than a year
               </Card.Description>
-              </Card.Content>
-            </Card>
-          </Grid.Column >
-          <Grid.Column >
-            <Card >
-              <Image src={node} />
-              <Card.Content>
-                <Card.Header>Node.js</Card.Header>
-                <Card.Description>
-                  Experience: less than a year
-              </Card.Description>
-              </Card.Content>
-            </Card>
-          </Grid.Column>
-          <Grid.Column >
-            <Card >
-              <Image src={reactImage} />
-              <Card.Content>
-                <Card.Header>React</Card.Header>
-                <Card.Description>
-                  Experience: less than a year
-              </Card.Description>
-              </Card.Content>
-            </Card>
-          </Grid.Column >
-          <Grid.Column>
-            <Card >
-              <Image src={semantic} />
-              <Card.Content>
-                <Card.Header>Semantic UI React</Card.Header>
-                <Card.Description>
-                  Experience: less than a year
-              </Card.Description>
-              </Card.Content>
-            </Card>
-          </Grid.Column>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
 
-        </Grid.Row>
-      </Grid>
-    </Container>
+          </Grid.Row>
+          <Grid.Row columns={4}>
+            <Grid.Column >
+              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
+                <Image src={cpp} />
+                <Card.Content>
+                  <Card.Header>C++</Card.Header>
+                  <Card.Description>
+                    Experience: 5 years
+              </Card.Description>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column >
+              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
+                <Image src={as} />
+                <Card.Content>
+                  <Card.Header>Android Studio</Card.Header>
+                  <Card.Description>
+                    Experience: 2 years
+              </Card.Description>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+            <Grid.Column >
+              <Card style={{marginLeft:'auto',marginRight:'auto'}}>
+                <Image src={firebase} />
+                <Card.Content>
+                  <Card.Header>Google Firebase</Card.Header>
+                  <Card.Description>
+                    Experience: 2 years
+              </Card.Description>
+                </Card.Content>
+              </Card>
+            </Grid.Column>
+          </Grid.Row >
+        </Grid>
+      </Container>
     </Segment>
   )
 };
