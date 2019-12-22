@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Card, Image, Divider } from 'semantic-ui-react';
+import { Grid, Segment, Card, Image, Divider, Container } from 'semantic-ui-react';
 import cpp from '../images/cpp.jpg'
 import as from '../images/as.jpg'
 import reactImage from '../images/react.jpg'
@@ -8,16 +8,17 @@ import mongo from '../images/mongo.jpg'
 import semantic from '../images/semantic.png'
 import firebase from '../images/firebase.jpg'
 const ExperienceSegment = ({ mobile }) => {
-   const dividerStyle= {
-    fontSize: mobile? '1.7em':'3em', 
-    marginBottom: 60, 
+  const dividerStyle = {
+    fontSize: mobile ? '1.7em' : '3em',
+    marginBottom: 60,
     marginLeft: '-3%'
   }
   return (
-    <Segment vertical style={{ paddingLeft: '3%', paddingTop: 30, background: 'rgba(122,122,122,0.1)' }}>
+    <Segment vertical style={{ paddingTop: 30, background: 'rgba(122,122,122,0.1)' }}>
       <Divider horizontal style={dividerStyle}>
         Technologies that I use
     </Divider>
+    <Container>
       <Grid relaxed stackable>
         <Grid.Row columns={4}>
           <Grid.Column >
@@ -102,6 +103,7 @@ const ExperienceSegment = ({ mobile }) => {
 
         </Grid.Row>
       </Grid>
+    </Container>
     </Segment>
   )
 };
