@@ -2,10 +2,10 @@ import React from 'react';
 import ExperienceSegment from './ExperienceSegment'
 import FaceSegment from './FaceSegment'
 
-const Home = () => (
+const Home = ({mobile}) => (
   <div>
-    <FaceSegment/>
-    <ExperienceSegment/>
+    <FaceSegment mobile={mobile}/>
+    <ExperienceSegment mobile={mobile}/>
   </div>
 )
 

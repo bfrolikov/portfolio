@@ -9,13 +9,15 @@ import {
 } from 'react-router-dom';
 
 const App = () => {
+  const mobile = (window.innerWidth <= 600? true : false);
   const [activeMenuElement, setActiveMenuElement] = useState('0');
-
+  console.log(window.innerWidth);
+  
   return (
     <div>
       <Router>
         <Segment inverted vertical style={{ padding: 0.1, margin: 0 }}>
-          <Menu inverted secondary style={{ margin: '45px 0px 0px 80px', fontSize: '1.25em' }}>
+          <Menu inverted secondary style={{ margin: '40px 0px 0px 80px', fontSize: '1.25em' }}>
             <Menu.Item
               active={activeMenuElement === '0'}
               as={Link}
@@ -30,7 +32,7 @@ const App = () => {
           </Menu>
           
         </Segment>
-        <Route exact path="/" render={() => <Home />} />
+        <Route exact path="/" render={() => <Home mobile = {mobile}/>} />
       </Router>
 
     </div>
