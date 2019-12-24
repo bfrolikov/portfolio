@@ -14,7 +14,7 @@ const ExperienceSegment = ({ mobile }) => {
     marginBottom: 60
   }
   return (
-    <Segment vertical style={{ paddingTop: 30, background: 'rgba(122,122,122,0.1)' }}>
+    <Segment vertical style={{ paddingTop: 30, background: 'rgba(122,122,122,0.1)',height:'auto' }}>
       <Divider horizontal style={dividerStyle}>
         Technologies that I use
     </Divider>

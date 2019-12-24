@@ -13,7 +13,7 @@ const FaceSegment = ({ mobile }) => {
       <Container>
         <Grid stackable columns='equal' style={{ maxWidth: 900 }}>
           <Grid.Column width={7}>
-            <Card style={{ minWidth: 330, marginLeft:'auto',marginRight:'auto'}} >
+            <Card style={{ minWidth: 330, marginLeft:'auto',marginRight:'auto'}}>
               <Image src={ava} />
             </Card>
           </Grid.Column>
