@@ -1,5 +1,5 @@
 import React from 'react';
-import { Grid, Segment, Card, Image, Divider, Container } from 'semantic-ui-react';
+import { Grid, Segment, Divider, Container } from 'semantic-ui-react';
 import ExperienceCard from './ExperienceCard'
 import cpp from '../images/cpp.jpg'
 import as from '../images/as.jpg'
